@@ -31,6 +31,6 @@ jobs:
           portRunId: ${{ fromJson(inputs.port_context).runId }}
           repositoryName: ${{ inputs.service_name }}
           portUserInputs: '{"cookiecutter_app_name": "${{ inputs.service_name }}" }'
-          cookiecutterTemplate: git@github.com:edend85/Test-Port-2.git
+          cookiecutterTemplate: https://github.com/lacion/cookiecutter-golang
           blueprintIdentifier: "service"
           organizationName: ${{ env.ORG_NAME }}
